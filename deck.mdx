@@ -6,7 +6,9 @@ import {
 } from "code-surfer";
 import { github, vsDark } from "@code-surfer/themes";
 
-import onemorething from "./diagrams/images/domain-sql-uml.png";
+import caDependencyRule from "./diagrams/images/caDependencyRule.svg";
+import caFlowControlDependencyRule1 from "./diagrams/images/caFlowControlDependencyRule1.svg";
+import caFlowControlDependencyRule2 from "./diagrams/images/caFlowControlDependencyRule2.svg";
 
 export const theme = vsDark;
 
@@ -16,50 +18,6 @@ export const theme = vsDark;
 ---
 
 # Главный паттерн Чистой Архитектуры
-
----
-
-<Image
-  src='https://raw.githubusercontent.com/AlexanderLapygin/dependency-inversion-slides/0b2718ac2f5aac057a2e1f093fc9df0b2e81f52c/diagrams/images/caFlowControlDependencyRule.svg?token=AC7E3D4ACYNP4QEOCBV7Z6C6VRHIS'
-  style={{
-    width: '45vw',
-    height: '100vh',
-  }}/>
-
----
-
-<Image
-  src='https://raw.githubusercontent.com/AlexanderLapygin/dependency-inversion-slides/0b2718ac2f5aac057a2e1f093fc9df0b2e81f52c/diagrams/images/caFlowControlDependencyRule.svg?token=AC7E3D4ACYNP4QEOCBV7Z6C6VRHIS'
-  style={{
-    width: '45vw',
-    height: '100vh',
-  }}/>
-
----
-
-<Image
-  src='https://raw.githubusercontent.com/AlexanderLapygin/dependency-inversion-slides/750c76c1d2c45b74977e588059e5f94dc1eef5b3/diagrams/images/caFlowControlDependencyRule.svg?token=AC7E3DZPATABAMAFABCJKKS6VQQDG'
-  style={{
-    width: '40vw',
-    height: '68vh',
-  }}
-  >
-
-</Image>
-
----
-
-<CodeSurfer>
-
-```js title="Title1"
-111
-```
-
-```js title="Title2" subtitle="Subtitle2"
-222
-```
-
-</CodeSurfer>
 
 ---
 
@@ -76,6 +34,48 @@ export const theme = vsDark;
   }}>
 
 </Image>
+
+---
+
+# В чём проблема ?
+
+---
+
+<Image src={caDependencyRule}
+    style={{
+      width: '63vw',
+      height: '100vh',
+}}/>
+
+---
+
+<Image src={caFlowControlDependencyRule1}
+style={{
+      width: '63vw',
+      height: '100vh',
+}}/>
+
+---
+
+<Image src={caFlowControlDependencyRule2}
+style={{
+      width: '63vw',
+      height: '100vh',
+}}/>
+
+---
+
+<CodeSurfer>
+
+```js title="Title1"
+111
+```
+
+```js title="Title2" subtitle="Subtitle2"
+222
+```
+
+</CodeSurfer>
 
 ---
 
