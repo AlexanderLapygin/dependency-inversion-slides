@@ -6,9 +6,11 @@ import {
 } from "code-surfer";
 import { github, vsDark } from "@code-surfer/themes";
 
+import caSimplified from "./diagrams/images/caSimplified.svg";
 import caDependencyRule from "./diagrams/images/caDependencyRule.svg";
 import caFlowControlDependencyRule1 from "./diagrams/images/caFlowControlDependencyRule1.svg";
 import caFlowControlDependencyRule2 from "./diagrams/images/caFlowControlDependencyRule2.svg";
+import caFlowControlDependencyRule3 from "./diagrams/images/caFlowControlDependencyRule3.svg";
 import caWithoutAndWithDIP from "./diagrams/images/caWithoutAndWithDIP.svg";
 
 export const theme = vsDark;
@@ -42,9 +44,17 @@ export const theme = vsDark;
 
 ---
 
+<Image src={caSimplified}
+    style={{
+      width: '100vw',
+      height: '100vh',
+}}/>
+
+---
+
 <Image src={caDependencyRule}
     style={{
-      width: '63vw',
+      width: '100vw',
       height: '100vh',
 }}/>
 
@@ -53,17 +63,16 @@ export const theme = vsDark;
 <Image src={caFlowControlDependencyRule1}
 style={{
       width: '100vw',
-      height: '100vh',
+      height: '100vh'
 }}/>
 
 ---
 
 <Image src={caFlowControlDependencyRule2}
 style={{
-      width: '63vw',
-      height: '100vh',
+      width: '100vw',
+      height: '100vh'
 }}/>
-
 
 ---
 
@@ -71,6 +80,14 @@ style={{
 style={{
       width: '100vw',
       height: '100vh',
+}}/>
+
+---
+
+<Image src={caFlowControlDependencyRule3}
+style={{
+      width: '100vw',
+      height: '100vh'
 }}/>
 
 ---
