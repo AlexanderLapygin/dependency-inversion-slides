@@ -4,7 +4,12 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
+
 import { github, vsDark } from "@code-surfer/themes";
+import {
+  vsDark as classTheme,
+  nightOwl as hooksTheme,
+} from "@code-surfer/themes";
 
 import caSimplified from "./diagrams/images/caSimplified.svg";
 import caDependencyRule from "./diagrams/images/caDependencyRule.svg";
@@ -101,6 +106,23 @@ style={{
       width: '100vw',
       height: '100vh'
 }}/>
+
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step>
+
+```ts file=./src/business-logic-without-dip.ts title="Without Dependensy Inversion" subtitle="A class component with state"
+```
+
+```ts file=./src/business-logic-dip.ts title="With Dependensy Inversion" subtitle="A function component with state"
+```
+
+</Step>
+
+</CodeSurferColumns>
 
 ---
 
