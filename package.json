@@ -1,10 +1,15 @@
 {
   "private": true,
+  "license": "MIT",
   "version": "1.0.0",
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
-    "test": "echo \"there are no tests\""
+    "start-without-dip": "tsc && node dist/index-without-dip.js",
+    "start-dip": "tsc && node dist/index-dip.js"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.4"
   },
   "devDependencies": {
     "code-surfer": "3.1.1",
