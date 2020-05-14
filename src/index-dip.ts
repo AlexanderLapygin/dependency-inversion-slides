@@ -1,7 +1,8 @@
-import {PostInteractor} from "./business-logic-dip";
-import {RestApiGateway} from "./RestApiGateway";
+import { ConsoleLogger } from "./ConsoleLogger";
+import { CounterInteractor } from "./CounterInteractor";
 
-new PostInteractor(new RestApiGateway('https://my-json-server.typicode.com/typicode/demo/posts')).getPostTitle()
-  .then(title => {
-    console.log(`title = ${title}` )
-  })
+const counterInteractor = new CounterInteractor(new ConsoleLogger())
+
+counterInteractor.increment()
+counterInteractor.increment()
+counterInteractor.increment()
