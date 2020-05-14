@@ -109,20 +109,32 @@ style={{
 
 ---
 
-<CodeSurferColumns themes={[withoutDipTheme, dipTheme]}>
+<CodeSurferColumns themes={[withoutDipTheme, withoutDipTheme]}>
 
 <Step>
 
-```ts file=./src/business-logic-without-dip.ts title="Without Dependensy Inversion" subtitle="Business Logic layer"
-```
-
-```ts file=./src/business-logic-dip.ts title="With Dependensy Inversion" subtitle="A function component with state"
+```ts file=./src/business-logic-without-dip.ts title="Use Case layer without DIP"
 ```
 
 </Step>
 
 </CodeSurferColumns>
 
+---
+
+<CodeSurferColumns themes={[withoutDipTheme, withoutDipTheme]}>
+
+<Step>
+
+```ts file=./src/business-logic-without-dip.ts title="Business Logic layer" subtitle="Business Logic layer"
+```
+
+```ts file=./src/rest-api-client-without-dip.ts title="Gateway layer" subtitle="Gateway layer"
+```
+
+</Step>
+
+</CodeSurferColumns>
 
 ---
 

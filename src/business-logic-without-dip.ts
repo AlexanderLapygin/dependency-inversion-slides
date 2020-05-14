@@ -1,4 +1,4 @@
-import {fetchPostTitle} from "./rest-api-client-without-dip";
+import {fetchPostTitle} from './rest-api-client-without-dip'
 
 export interface PostUseCaseIn {
   getPostTitle(url: string): Promise<string>
