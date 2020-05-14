@@ -3,10 +3,9 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
-    "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
-    "start-without-dip": "tsc && node dist/index-without-dip.js",
-    "start-dip": "tsc && node dist/index-dip.js",
+    "start": "tsc && node dist/index.js",
+    "start-naive": "tsc && node dist/index-naive.js",
     "start-deck": "mdx-deck deck.mdx"
   },
   "dependencies": {
